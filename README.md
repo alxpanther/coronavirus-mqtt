@@ -1,4 +1,5 @@
 Скрипт берет данные с https://corona.lmao.ninja/countries в json формате, выбирает из них страну, которую задаем в начале скрипта и шлет по ней данные в MQTT.
+
 Используется библиотека, которая есть в каталоге с Majordomo (mjdm.ru) - лежит по пути "корень MJD"/3rdparty/phpmqtt/phpMQTT.php
 Если вдруг от туда файл phpMQTT.php пропадет, то вот исходник: http://github.com/bluerhinos/phpMQTT
 За основу был взят файл publish.php, который лежит в этих исходниках.
