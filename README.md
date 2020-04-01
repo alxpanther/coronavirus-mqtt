@@ -13,7 +13,7 @@
 
 Запускать раз в 30 минут.
 
---
+---
 
 Переписал полностью на Go. Скомпилировал бинарник для Windows. Компилил на своем компе, он Windows x64, так что не знаю, запуститься ли на x32 винде. Скорее всего, что нет.
 
@@ -21,25 +21,26 @@
 
     c-virus.exe -user <имя пользователя на mqtt брокере> -password <пароль для этого пользователя> -broker tcp://10.1.3.35:1883
 
-Где: tcp://10.1.3.35:1883 - адрес где у меня стоит mqtt брокер.
--user, -password можно не указывать если на брокере не настроена аутентификации.
-Есть справка. Вызывать c-virus.exe -h
-Фактически, он вот:
+Где: `tcp://10.1.3.35:1883` - адрес где у меня стоит mqtt брокер.
 
-Usage of c-virus-mqtt:
-    -broker strins
-        The broker URI. ex: tcp://localhost:1883 (default "tcp://localhost:1883")
-    -country string
-        For witch country (optional) (default "Ukraine")
-    -id string
-        The ClientID (optional) (default "CV-Stats")
-    -password string
-        The password (optional)
-    -timezone string
-        Timezone for updated date (optional) (default "Europe/Kiev")
-    -topic string
-        Topics start at (optional) (default "/coronavirus")
-    -user string
-        The User (optional)
+`-user, -password` можно не указывать если на брокере не настроена аутентификации.
 
-Да-да-да, статистику можно получать для разных стран и указывать разные timezone для получаемого поля updated.
+Есть справка. Вызывать `c-virus-mqtt.exe -h`
+
+    Usage of c-virus-mqtt:
+        -broker strins
+            The broker URI. ex: tcp://localhost:1883 (default "tcp://localhost:1883")
+        -country string
+            For witch country (optional) (default "Ukraine")
+        -id string
+            The ClientID (optional) (default "CV-Stats")
+        -password string
+            The password (optional)
+        -timezone string
+            Timezone for updated date (optional) (default "Europe/Kiev")
+        -topic string
+            Topics start at (optional) (default "/coronavirus")
+        -user string
+            The User (optional)
+
+_Да-да-да, статистику можно получать для разных стран и указывать разные timezone для получаемого поля updated._
