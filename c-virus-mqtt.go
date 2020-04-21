@@ -59,7 +59,7 @@ func getFormattedTimeFromEpochMillis(z int64, zone string) string {
 }
 
 func main() {
-	url := "https://corona.lmao.ninja/countries"
+	url := "https://corona.lmao.ninja/v2/countries"
 
 	broker := flag.String("broker", "tcp://localhost:1883", "The broker URI. ex: tcp://localhost:1883")
 	password := flag.String("password", "", "The password (optional)")
