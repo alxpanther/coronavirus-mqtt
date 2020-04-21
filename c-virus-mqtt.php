@@ -11,7 +11,7 @@ $client_id = "phpMQTT-publisher"; // make sure this is unique for connecting to 
 $date_format = "Y-m-d H:i:s";
 $country = "Ukraine";
 
-$fc = file_get_contents('https://corona.lmao.ninja/countries');
+$fc = file_get_contents('https://corona.lmao.ninja/v2/countries');
 
 $date = new DateTime();
 $mqtt = new Bluerhinos\phpMQTT($server, $port, $client_id);
